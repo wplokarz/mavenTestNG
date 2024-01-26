@@ -5,8 +5,8 @@ Feature: Post new picture
     And user is logged on example-photo-portal.com
     When user click on upload photo
     Then new browser windows opens
-    And user click on upload photo button
+    When user click on upload photo button
     And user can select picture from local disk
     And write text in text field
     And user click update status
-    And picture is posted on example-photo-portal
+    Then picture is posted on example-photo-portal
